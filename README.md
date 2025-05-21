@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# Pana una Birra
+Pana una birra is a beer e-commerce mobile app built with React Native and Expo. It allows users to view, share, and purchase beers individually or in groups. The app includes group tagging for shared purchases, QR-based beer selection, biometric login, and real-time data synchronization via Firebase.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## ✨ Features
+- **REST API**: Fully functional RESTful endpoints to manage resources.
+- **GraphQL API**: GraphQL endpoints for efficient querying and data fetching.
+- **PostgreSQL Database**: Data storage managed via PostgreSQL for easy scalability and query optimization.
+- **Authentication and Authorization**: Includes basic authentication for secure access.
+- 🏠 Home Screen displaying available beers
+- 🍺 Beer Detail Screen with full product info
+- 🛒 Cart System that supports group purchases with user tags
+- 📲 Add to Cart via button or QR code scan
+- 💳 Mock Payment System
+- 🗺️ Map Integration showing beer store locations
+- 🔐 Authentication with:
+  - Email/password login & registration
+  - Biometric login (fingerprint/face ID)
+- 🔥 Real-Time Integration with Firebase:
+  - Authentication
+  - Firestore (beer data, user data, cart)
+  - Storage (images)
+- 🔔 Push Notifications (in development)
 
-## Get started
+## Technologies Used
+- Expo v52.0.28
+- React v18.3.1
+- React Native v0.76.6
+- @react-native-picker/picker v2.9.0 (Dropdown)
+- Firebase (Auth, Firestore, Storage)
+- QR Code Scanner
+- Biometric Auth via Expo
+- MapView for location display
 
-1. Install dependencies
+## Setup
+1. Install the dependencies:
 
    ```bash
    npm install
-   ```
 
-2. Start the app
+2. Configure your Firebase credentials in a .env.local file
+
+## Run
+Start the app
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+### Run for Android
+   ```bash
+   npx expo run:android
+   ```
+### Run for iOS
+   ```bash
+   npx expo run:ios
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Contributions
+Contributions are welcome! If you want to improve the project, please create a fork and submit a pull request.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contact
+For any questions or suggestions, feel free to contact me at [ezioeg@gmail.com].
