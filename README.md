@@ -26,12 +26,6 @@ Pana una birra is a beer e-commerce mobile app built with React Native and Expo.
 - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/) `v16.1.6`
 - [Expo Device](https://docs.expo.dev/versions/latest/sdk/device/) `v7.1.4`
 
-### UI/Styling
-- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) `v8.1.0`
-- [React Native Easy Toast](https://github.com/crazycodeboy/react-native-easy-toast) `v2.0.0`
-- [React Native Swiper](https://github.com/leecade/react-native-swiper) `v1.6.0-nightly.3`
-- [React Native Swipe List View](https://github.com/jemise111/react-native-swipe-list-view) `v3.2.6`
-
 ### State Management
 - [React Redux](https://react-redux.js.org/) `v9.2.0`
 - [Redux Toolkit](https://redux-toolkit.js.org/) `v2.8.2`
