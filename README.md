@@ -50,6 +50,27 @@ Pana una birra is a beer e-commerce mobile app built with React Native and Expo.
 
 2. Configure your Firebase credentials in a .env file
 
+## Cloud Compilation with EAS (recommended)
+
+For native builds without configuring Android Studio/Xcode:
+
+1. Install EAS CLI
+```bash
+npm install -g eas-cli
+```
+
+2. Log in (if it's your first time)
+```bash
+eas login
+```
+
+3. Create a development build
+```bash
+eas build --profile development --platform android
+```
+
+4. Scan the QR code to install it on your device
+
 ## Run
 Start the app
 
