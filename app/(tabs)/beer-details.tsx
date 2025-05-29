@@ -1,15 +1,16 @@
-import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
-import { useEffect, useState } from "react";
-import { router } from "expo-router";
-import { useAppDispatch, useAppSelector } from "@/redux/store";
-import { getAuth } from "firebase/auth";
-import { addToSharedCart } from "@/redux/slices/cartSlice";
-import { clearSelectedBeer } from "@/redux/slices/selectedBeerSlice";
+import BeerContent from "@/components/beer/BeerContent";
 import BeerHeader from "@/components/beer/BeerHeader";
 import BeerNotFound from "@/components/beer/BeerNotfound";
-import BeerContent from "@/components/beer/BeerContent";
-import { CartItemTypes } from "@/types/cartTypes";
+import { addToSharedCart } from "@/redux/slices/cartSlice";
+import { clearSelectedBeer } from "@/redux/slices/selectedBeerSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/store";
 import { globalStyles } from "@/styles/globalStyles";
+import { CartItemTypes } from "@/types/cartTypes";
+import { router } from "expo-router";
+import { getAuth } from "firebase/auth";
+import { useEffect, useState } from "react";
+import { StatusBar, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function BeerDetail() {
     const dispatch = useAppDispatch();
@@ -55,8 +56,7 @@ export default function BeerDetail() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" />
-
+            <StatusBar backgroundColor="transparent" barStyle="dark-content" />
             <BeerHeader
                 title={beer.name}
                 onAddToCart={handleAddToCart}

@@ -1,17 +1,17 @@
-import { StyleSheet, View, FlatList } from "react-native";
-import { router } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useAppDispatch, useAppSelector } from "@/redux/store";
-import {
-    updateCartItemQuantity,
-    removeFromSharedCart,
-} from "@/redux/slices/cartSlice";
 import CartHeader from "@/components/cart/CartHeader";
-import CartSummary from "@/components/cart/CartSummary";
 import { CartItem } from "@/components/cart/CartItem";
+import CartSummary from "@/components/cart/CartSummary";
 import CartTitleCounter from "@/components/cart/CartTitleCounter";
 import EmptyState from "@/components/common/EmptyState";
+import {
+    removeFromSharedCart,
+    updateCartItemQuantity,
+} from "@/redux/slices/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/store";
 import { globalStyles } from "@/styles/globalStyles";
+import { router } from "expo-router";
+import { FlatList, StatusBar, StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function CartScreen() {
     const dispatch = useAppDispatch();
@@ -41,6 +41,7 @@ export default function CartScreen() {
 
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar backgroundColor="transparent" barStyle="dark-content" />
             {items.length === 0 ? (
                 <EmptyState />
             ) : (

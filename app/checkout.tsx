@@ -1,25 +1,24 @@
+import CheckoutHeader from "@/components/checkout/CheckoutHeader";
+import {
+    BankIcon,
+    CreditCardIcon,
+    DropdownIcon,
+    PayPalIcon,
+} from "@/components/common/icons";
+import { globalStyles } from "@/styles/globalStyles";
+import { router } from "expo-router";
 import React, { useState } from "react";
 import {
-    StyleSheet,
-    View,
-    Text,
-    TouchableOpacity,
-    TextInput,
-    ScrollView,
-    SafeAreaView,
     Image,
+    ScrollView,
+    StatusBar,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from "react-native";
-import { router } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import {
-    CreditCardIcon,
-    PayPalIcon,
-    BankIcon,
-    DropdownIcon,
-} from "@/components/common/icons";
-import CheckoutHeader from "@/components/checkout/CheckoutHeader";
-import CartHeader from "@/components/cart/CartHeader";
-import { globalStyles } from "@/styles/globalStyles";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function CheckoutScreen() {
     const [selectedMethod, setSelectedMethod] = useState("card"); // 'card', 'paypal', 'bank'
@@ -140,8 +139,7 @@ export default function CheckoutScreen() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar style="auto" />
-
+            <StatusBar backgroundColor="transparent" barStyle="dark-content" />
             <CheckoutHeader
                 title="Checkout"
                 onBack={() => router.back()}

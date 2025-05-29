@@ -1,6 +1,6 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { AddToCartIcon, BackIcon } from "../common/icons";
 import { globalStyles } from "@/styles/globalStyles";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { AddToCartIcon, BackIcon } from "../common/icons";
 
 export default function BeerTypesHeader({
     title,
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         padding: 16,
+
         backgroundColor: globalStyles.primaryBackground.backgroundColor,
     },
     backButton: {

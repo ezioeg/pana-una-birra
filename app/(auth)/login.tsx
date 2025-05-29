@@ -205,17 +205,6 @@ export default function Login() {
                     disabled={loading}
                 />
 
-                <Text style={styles.forgotPassword}>Forgot your password?</Text>
-
-                <AuthDivider text="Or" />
-
-                <TouchableOpacity
-                    style={styles.fingerPrintContainer}
-                    onPress={handleFingerPrintLogin}
-                >
-                    <FingerPrintIcon size={70} color="#666" />
-                </TouchableOpacity>
-
                 <View style={styles.signupContainer}>
                     <Text style={styles.signupText}>
                         Dont have an account?{" "}
@@ -226,6 +215,15 @@ export default function Login() {
                         </Pressable>
                     </Link>
                 </View>
+
+                <AuthDivider text="Or" />
+
+                <TouchableOpacity
+                    style={styles.fingerPrintContainer}
+                    onPress={handleFingerPrintLogin}
+                >
+                    <FingerPrintIcon size={70} color="#666" />
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -278,7 +276,6 @@ const styles = StyleSheet.create({
     signupContainer: {
         flexDirection: "row",
         justifyContent: "center",
-        marginTop: "auto",
         marginBottom: 32,
     },
     signupText: {

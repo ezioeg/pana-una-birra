@@ -1,23 +1,24 @@
-import {
-    View,
-    StyleSheet,
-    Image,
-    TouchableOpacity,
-    ActivityIndicator,
-    FlatList,
-} from "react-native";
-import { useEffect } from "react";
-import { useRouter } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { getAuth } from "firebase/auth";
-import { useAppDispatch, useAppSelector } from "@/redux/store";
-import { setSelectedBeer } from "@/redux/slices/selectedBeerSlice";
+import { BeerInfo } from "@/components/home/BeerInfo";
+import HomeHeader from "@/components/home/HomeHeader";
 import { getBeers } from "@/redux/slices/beersSlice";
 import { subscribeToSharedCart } from "@/redux/slices/cartSlice";
-import HomeHeader from "@/components/home/HomeHeader";
-import { BeerInfo } from "@/components/home/BeerInfo";
-import { BeerTypes } from "@/types/beerTypes";
+import { setSelectedBeer } from "@/redux/slices/selectedBeerSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/store";
 import { globalStyles } from "@/styles/globalStyles";
+import { BeerTypes } from "@/types/beerTypes";
+import { useRouter } from "expo-router";
+import { getAuth } from "firebase/auth";
+import { useEffect } from "react";
+import {
+    ActivityIndicator,
+    FlatList,
+    Image,
+    StatusBar,
+    StyleSheet,
+    TouchableOpacity,
+    View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
     const router = useRouter();
@@ -51,6 +52,7 @@ export default function HomeScreen() {
     }
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar backgroundColor="transparent" barStyle="dark-content" />
             <FlatList
                 data={beers}
                 keyExtractor={(item) => item.id.toString()}

@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
 import { globalStyles } from "@/styles/globalStyles";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function BeerDescription({
     description,
@@ -17,6 +17,7 @@ export default function BeerDescription({
 const styles = StyleSheet.create({
     descriptionSection: {
         marginBottom: 20,
+        marginHorizontal: 16,
     },
     sectionTitle: {
         fontSize: 18,

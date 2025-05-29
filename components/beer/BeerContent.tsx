@@ -1,10 +1,10 @@
+import { globalStyles } from "@/styles/globalStyles";
+import { BeerContentProps } from "@/types/beerTypes";
 import React from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
+import BeerDescription from "./BeerDescription";
 import DetailsSection from "./DetailsSection";
 import QuantityController from "./QuantityController";
-import BeerDescription from "./BeerDescription";
-import { BeerContentProps } from "@/types/beerTypes";
-import { globalStyles } from "@/styles/globalStyles";
 
 export default function BeerContent({
     beer,
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingVertical: 16,
         paddingHorizontal: 20,
+        marginHorizontal: 16,
         marginBottom: 50,
         backgroundColor: globalStyles.secondaryBackground.backgroundColor,
         height: 290,

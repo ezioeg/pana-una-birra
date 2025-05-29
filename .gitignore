@@ -37,4 +37,9 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# Firebase config files
+GoogleService-Info.plist
+google-services.json
+
+# Example apps or folders
 app-example

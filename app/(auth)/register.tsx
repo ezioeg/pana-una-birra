@@ -1,14 +1,13 @@
-import { useRef, useState } from "react";
-import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
-import { Href, Link, router } from "expo-router";
-import { useAppDispatch } from "@/redux/store";
-import { register } from "@/redux/slices/authSlice";
 import AuthHeader from "@/components/auth/AuthHeader";
-import AuthTerms from "@/components/auth/AuthTerms";
-import { HidePasswordIcon, ShowPasswordIcon } from "@/components/common/icons";
 import CustomButton from "@/components/common/CustomButton";
-import { FirebaseErrorCodeTypes } from "@/types/firebaseErrorCodeTypes";
+import { HidePasswordIcon, ShowPasswordIcon } from "@/components/common/icons";
+import { register } from "@/redux/slices/authSlice";
+import { useAppDispatch } from "@/redux/store";
 import { globalStyles } from "@/styles/globalStyles";
+import { FirebaseErrorCodeTypes } from "@/types/firebaseErrorCodeTypes";
+import { Href, Link, router } from "expo-router";
+import { useRef, useState } from "react";
+import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function Signup() {
     const dispatch = useAppDispatch();
@@ -124,8 +123,6 @@ export default function Signup() {
                     </Pressable>
                 </View>
 
-                <AuthTerms />
-
                 <CustomButton
                     title={loading ? "CREATING ACCOUNT..." : "SIGN UP"}
                     onPress={handleSignup}
@@ -142,6 +139,8 @@ export default function Signup() {
                         </Pressable>
                     </Link>
                 </View>
+
+                {/* <AuthTerms /> */}
             </View>
         </View>
     );
@@ -182,7 +181,6 @@ const styles = StyleSheet.create({
     loginContainer: {
         flexDirection: "row",
         justifyContent: "center",
-        marginTop: "auto",
         marginBottom: 32,
     },
     loginText: {
