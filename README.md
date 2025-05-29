@@ -55,28 +55,22 @@ Start the app
 
    ```bash
    npx expo start
-   ```
-   or
-   ```bash
-   npm start
+# or
+ npm start
    ```
 
 ### Run for Android
    ```bash
    npx expo run:android
-   ```
-   or
-   ```bash
-   npm run android
+# or
+npm run android
    ```
 
 ### Run for iOS
    ```bash
    npx expo run:ios
-   ```
-   or
-   ```bash
-   npm run ios
+ or
+npm run ios
    ```
 
 ## Cloud Compilation with EAS (recommended)
