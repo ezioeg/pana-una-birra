@@ -17,6 +17,38 @@ Pana una birra is a beer e-commerce mobile app built with React Native and Expo.
   - Storage (images)
 - 🔔 Push Notifications (in development)
 
+<details>
+  <summary>📱 Android screenshots</summary>
+  <p>
+    <img src="https://github.com/user-attachments/assets/76f758a6-021b-4c25-8a71-d161769fe7ea" alt="Android Screenshot 1" width="400"/>
+    <img src="https://github.com/user-attachments/assets/c370d6c4-40a8-41a3-b274-1ffa9997a551" alt="Android Screenshot 2" width="400"/>
+  </p>
+  <p>
+    <img src="https://github.com/user-attachments/assets/f60e4556-4f97-4feb-a6ac-fd55035946e2" alt="Android Screenshot 3" width="400"/>
+    <img src="https://github.com/user-attachments/assets/8da0df30-10f5-47c5-8547-a6c5bc8e82db" alt="Android Screenshot 4" width="400"/>
+  </p>
+  <p>
+    <img src="https://github.com/user-attachments/assets/e671defd-5052-4db9-bca4-c05cc09cae19" alt="Android Screenshot 5" width="400"/>
+  </p>
+</details>
+
+<details>
+  <summary>📱 iOS screenshots</summary>
+  <p>
+    <img src="https://github.com/user-attachments/assets/eb8c9c6d-5299-410e-a593-e427c4bc8ab4" alt="iOS Screenshot 1" width="400"/>
+    <img src="https://github.com/user-attachments/assets/abd10014-ebec-4992-b602-ab0f5218751f" alt="iOS Screenshot 2" width="400"/>
+  </p>
+  <p>
+    <img src="https://github.com/user-attachments/assets/2c539f50-5be8-4ca5-8c89-b513304aec59" alt="iOS Screenshot 3" width="400"/>
+    <img src="https://github.com/user-attachments/assets/15a49f04-da7e-45ba-9364-418debe88022" alt="iOS Screenshot 4" width="400"/>
+  </p>
+  <p>
+    <img src="https://github.com/user-attachments/assets/dc4dad21-c6b7-4a90-be3f-8c509e4b457b" alt="iOS Screenshot 5" width="400"/>
+    <img src="https://github.com/user-attachments/assets/ec597b20-9477-4ffd-ad67-1ba3f8301801" alt="iOS Screenshot 6" width="400"/>
+  </p>
+</details>
+
+
 ## Technologies Used
 ### Core
 - [Expo](https://expo.dev/) `v53.0.9`
