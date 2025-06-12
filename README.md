@@ -1,21 +1,34 @@
-# Pana una Birra
-Beer ecommerce mobile application developed with React Native and Expo. It includes biometric login, barcode scanning to add products, group purchases with user tags, and real-time synchronization with Firebase.
+## 🍻 Pana una Birra  
+Beer ecommerce mobile app developed with React Native and Expo. Integrates biometric login, barcode scanning, group purchases, and Firebase real-time synchronization.
 
-## Features
-- 🏠 Home Screen displaying available beers
-- 🍺 Beer Detail Screen with full product info
-- 🛒 Cart System that supports group purchases with user tags
-- 📲 Add to Cart via button or barcode scan
-- 💳 Mock Payment System
-- 🗺️ Map Integration showing beer store locations
-- 🔐 Authentication with:
-  - Email/password login & registration
-  - Biometric login (fingerprint/face ID)
-- 🔥 Real-Time Integration with Firebase:
+### Features  
+- **Home Screen**  
+  Displays the full list of available beers.
+
+- **Beer Detail View**  
+  Shows product information: image, name, description, price, and more.
+
+- **Cart System**  
+  Supports group purchases with user tags and individual beer contributions.
+
+- **Product Addition**  
+  Add beers to cart via button or barcode scanner.
+
+- **Authentication**  
+  - Email/password login and registration.  
+  - Biometric login (Face ID / Fingerprint).
+
+- **Firebase Integration**  
+  Real-time sync with:  
+  - Firestore (beers, users, cart)  
+  - Storage (images)  
   - Authentication
-  - Firestore (beer data, user data, cart)
-  - Storage (images)
-- 🔔 Push Notifications (in development)
+
+- **Map Integration**  
+  Displays locations of nearby beer stores.
+
+- **Push Notifications**  
+  *(Feature in development)*
 
 <details>
   <summary>📱 Android screenshots</summary>
