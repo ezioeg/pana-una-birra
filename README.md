@@ -1,5 +1,5 @@
 # Pana una Birra
-Pana una Birra is a beer e-commerce mobile app built with React Native and Expo. It allows users to view, share, and purchase beers individually or in groups. The app includes group tagging for shared purchases, barcode-based beer selection, biometric login, and real-time data synchronization via Firebase.
+Beer ecommerce mobile application developed with React Native and Expo. It includes biometric login, barcode scanning to add products, group purchases with user tags, and real-time synchronization with Firebase.
 
 ## Features
 - 🏠 Home Screen displaying available beers
